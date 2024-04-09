@@ -9,10 +9,10 @@ rockApp = Rocketry(logger_repo=MemoryRepo()
         'force_status_from_logs': True,
 
         'silence_task_prerun': False,
-        'silence_task_logging': False,
+        'silence_task_logging': True,
         'silence_cond_check': False,
 
-        'max_process_count': 5,
+        'max_process_count': 6,
         'restarting': 'replace',
         'cycle_sleep': 0.1
     })
