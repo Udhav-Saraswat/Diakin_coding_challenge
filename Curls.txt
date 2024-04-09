@@ -1,0 +1,14 @@
+API - /getBuidlingDetails
+
+curl --location 'http://localhost:8080/getBuildingDetails'
+
+API - /addRooms
+
+curl --location 'http://localhost:8080/addRooms' \
+--header 'Content-Type: application/json' \
+--data '{
+    "occupant_Name": "Guest-n",
+    "current_temp": 25,
+    "heating_status" : "enabled",
+    "cooling_status" : "enabled"
+}'

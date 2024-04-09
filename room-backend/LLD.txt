@@ -1,0 +1,73 @@
+LOW LEVEL DESIGN OF TEMPERATURE MANAGEMENT SYSTEM
+
+1. Object - Room
+
+Attribuets of Room :-
+
+uuid
+OccupantName
+currentTemp : initally : random 10 to 40
+heatingStatus
+coolingStatus
+
+
+2. Object - Building 
+
+Attribuets of Building :-
+
+room = [] / list in python  Room : room, OOPS - Aggregation
+requestedTemp = 20c
+
+Functions of Building :-
+
+func changeTemp
+
+func addRooms
+
+func removeRooms
+
+
+Main Application Run :-
+
+Create Building object
+
+Initially add 4 rooms 
+
+Request Temp of 25C
+
+Logic for status update :-
+
+roomTemp < requestedTemp = heating enabled
+
+roomTemp > requestedTemp = cooling enabled
+
+Add/Remove rooms
+
+Summary Status of rooms
+
+------- API's
+
+1. @post - changeRoomTemperature, roomId
+
+
+2. @get - getBuildingDetails
+
+
+3. @get - getRoomDetails - /?roomUuid
+
+
+4. @post - addRoom
+
+
+5. @delete - removeRoom
+
+
+------- Tech Stack
+
+1. Backend Server using python Fast API
+2. In memory data storage 
+
+3. React for frontend
+
+
+	

@@ -1,0 +1,32 @@
+{
+    "room": [
+        {
+            "uuid": "c803375d-e8a0-4869-b8f9-0d19f782faf8",
+            "occupant_Name": "Guest-1",
+            "current_temp": 30,
+            "heating_status": "disabled",
+            "cooling_status": "disabled"
+        },
+        {
+            "uuid": "5bdc5ae5-43cf-4d67-8ca3-03a5c07539d3",
+            "occupant_Name": "Guest-2",
+            "current_temp": 10,
+            "heating_status": "disabled",
+            "cooling_status": "disabled"
+        },
+        {
+            "uuid": "0d58c340-9486-4b16-a6a9-0df0f3c3ccb1",
+            "occupant_Name": "Guest-3",
+            "current_temp": 5,
+            "heating_status": "disabled",
+            "cooling_status": "disabled"
+        },
+        {
+            "uuid": "4c727a1a-5c0c-4f2a-a396-277ca9c8fa2c",
+            "occupant_Name": "Guest-4",
+            "current_temp": 2,
+            "heating_status": "disabled",
+            "cooling_status": "disabled"
+        }
+    ]
+}
