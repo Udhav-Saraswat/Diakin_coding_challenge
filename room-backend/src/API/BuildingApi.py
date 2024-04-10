@@ -12,6 +12,9 @@ fastapi = FastAPI()
 BaseConfig.arbitrary_types_allowed = True
 
 
+'''
+Running uvicorn server which host the fast api's
+'''
 def run_server():
     build_in_memory_data()
     uvicorn.run(fastapi, host="127.0.0.1", port=8080)

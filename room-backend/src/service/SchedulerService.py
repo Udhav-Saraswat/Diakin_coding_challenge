@@ -2,6 +2,9 @@ from redbird.repos import MemoryRepo
 from rocketry import Rocketry
 from rocketry.conds import secondly
 
+'''
+Main rocketry app 
+'''
 rockApp = Rocketry(logger_repo=MemoryRepo()
                    , config={
         'task_execution': 'process',
@@ -26,6 +29,9 @@ def trigger_scheduler():
     rockApp.run()
 
 
+'''
+Performs operations per second
+'''
 @rockApp.task(secondly)
 def do_main():
     print("Scheduler is running")
